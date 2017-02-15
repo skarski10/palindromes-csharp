@@ -3,20 +3,28 @@
 }
 
 <div class="row">
-    <h3>Hello</h3>
+    <h3>Palindromes</h3>
     <form action="/" method="post">
-        <label for="sentence">Enter a sentence</label>
-        <input type="text" name="sentence" id="sentence">
-        <label for="replace">Word to Replace</label>
-        <input type="text" name="replace" id="replace">
-        <label for="new">New word</label>
-        <input type="text" name="new" id="new">
+        <label for="word">Enter a word</label>
+        <input type="text" name="word" id="word">
         <button type="submit" name="button">Enter</button>
     </form>
 </div>
 
-
+@if (@Model != null)
+{
     <div class="row">
-    <h2>@Model</h2>
-    <p>Here's some stuff</p>
+        <h2>@if (@Model.CompareStrings())
+            {
+                <p>@Model.GetUserString() is a palindrome and the palindrome is @Model.GetReverseString()</p>
+            }
+
+            else
+            {
+                <p>@Model.GetUserString() is not a palindrome!</p>
+            }
+
+        </h2>
     </div>
+
+}
