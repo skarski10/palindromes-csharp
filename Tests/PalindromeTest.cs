@@ -39,7 +39,7 @@ namespace PalindromesAppTest
         public void CompareStrings_Compare_True()
         {
             // Arrange
-            string userInput = "Hello";
+            string userInput = "HelloolleH";
             string reverseInput = "olleH";
             Palindromes newPalindromes = new Palindromes(userInput);
             newPalindromes.SetReverseString();
