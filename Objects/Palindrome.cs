@@ -7,12 +7,23 @@ namespace PalindromesApp.Objects
     public class Palindromes
     {
         private string _userString;
-        private string _reverseWordd;
+        private string _reverseString;
 
         public Palindromes(string newUserString)
         {
             _userString = newUserString;
+        }
 
+        public void SetReverseString()
+        {
+            // string backwards = "";
+            // for (int i = _userString.Length; i > 0; i--)
+            // {
+            //     backwards += _userString[i-1];
+            // }
+            // Console.WriteLine(backwards);
+            // _reverseString = backwards;
+            _reverseString = "blah";
         }
 
         // public bool LocateFindWord()
@@ -80,6 +91,10 @@ namespace PalindromesApp.Objects
         public string GetUserString()
         {
             return _userString;
+        }
+        public string GetReverseString()
+        {
+            return _reverseString;
         }
     }
 }
