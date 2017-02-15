@@ -1,0 +1,22 @@
+@{
+    Layout = "Shared/_Layout.cshtml";
+}
+
+<div class="row">
+    <h3>Hello</h3>
+    <form action="/" method="post">
+        <label for="sentence">Enter a sentence</label>
+        <input type="text" name="sentence" id="sentence">
+        <label for="replace">Word to Replace</label>
+        <input type="text" name="replace" id="replace">
+        <label for="new">New word</label>
+        <input type="text" name="new" id="new">
+        <button type="submit" name="button">Enter</button>
+    </form>
+</div>
+
+
+    <div class="row">
+    <h2>@Model</h2>
+    <p>Here's some stuff</p>
+    </div>
