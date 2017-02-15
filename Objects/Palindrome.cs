@@ -25,6 +25,12 @@ namespace PalindromesApp.Objects
             _reverseString = backwards;
         }
 
+        public bool CompareStrings()
+        {
+            return _userString == _reverseString;
+        }
+
+
         // public bool LocateFindWord()
         // {
         //     if (_userString.Contains(_findWord))

@@ -34,5 +34,21 @@ namespace PalindromesAppTest
             // Assert
             Assert.Equal(reverseInput, newPalindromes.GetReverseString());
         }
+
+        [Fact]
+        public void CompareStrings_Compare_True()
+        {
+            // Arrange
+            string userInput = "Hello";
+            string reverseInput = "olleH";
+            Palindromes newPalindromes = new Palindromes(userInput);
+            newPalindromes.SetReverseString();
+
+            // Act
+            newPalindromes.CompareStrings();
+
+            // Assert
+            Assert.Equal(true, newPalindromes.CompareStrings());
+        }
     }
 }
