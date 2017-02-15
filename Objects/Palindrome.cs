@@ -16,14 +16,13 @@ namespace PalindromesApp.Objects
 
         public void SetReverseString()
         {
-            // string backwards = "";
-            // for (int i = _userString.Length; i > 0; i--)
-            // {
-            //     backwards += _userString[i-1];
-            // }
-            // Console.WriteLine(backwards);
-            // _reverseString = backwards;
-            _reverseString = "blah";
+            string backwards = "";
+            for (int i = _userString.Length; i > 0; i--)
+            {
+                backwards += _userString[i-1];
+            }
+            Console.WriteLine(backwards);
+            _reverseString = backwards;
         }
 
         // public bool LocateFindWord()
